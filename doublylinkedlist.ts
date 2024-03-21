@@ -1,4 +1,4 @@
-class ListNode<T> {
+export class ListNode<T> {
   public data: T | null;
   public next: ListNode<T> | null;
   public prev: ListNode<T> | null;
@@ -13,7 +13,7 @@ class ListNode<T> {
   }
 }
 
-class DoublyLinkedList<T> {
+export class DoublyLinkedList<T> {
   private size: number = 0;
   private head: ListNode<T> | null = null;
   private tail: ListNode<T> | null = null;
@@ -234,7 +234,3 @@ class DoublyLinkedList<T> {
     return nodeData!;
   }
 }
-
-const doublyLinkedList = new DoublyLinkedList(1, 2, 3, 4, 5, 6, 7);
-console.log(doublyLinkedList);
-console.log(doublyLinkedList.toString());
